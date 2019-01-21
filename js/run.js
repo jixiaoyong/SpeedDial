@@ -1,5 +1,5 @@
 onload = function init() {
-  if (IsPC()) {
+  if (true) {
     if (navigator.serviceWorker != null) {
       navigator.serviceWorker.register('sw.js')
         .then(function (registration) {
