@@ -54,6 +54,10 @@ var urls = [
   {
     "name": "技术男的后花园",
     "url": "http://baronzhang.com/"
+  },
+  {
+    "name": "GitYuan",
+    "url": "https://gityuan.com/"
   }
 ]
 
