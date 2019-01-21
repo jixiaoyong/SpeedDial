@@ -4,28 +4,44 @@ var urls = [
     "url": "https://v2ex.com/"
   },
   {
-    "name": "inoreader",
-    "url": "https://www.inoreader.com"
+    "name": "Android Developer",
+    "url": "https://developer.android.google.cn/"
   },
   {
-    "name": "HackerNews",
-    "url": "https://news.ycombinator.com/news"
+    "name": "WanAndroid",
+    "url": "http://www.wanandroid.com/"
   },
   {
     "name": "Github",
-    "url": "https://github.com/search"
+    "url": "https://github.com/jixiaoyong"
   },
   {
     "name": "StackOverflow",
     "url": "https://stackoverflow.com/"
   },
   {
-    "name": "wiki",
-    "url": "https://wiki.xizero.com/"
+    "name": "AndroidXRef",
+    "url": "http://androidxref.com/"
   },
   {
-    "name": "Product Hunt",
-    "url": "https://www.producthunt.com/"
+    "name": "Android周刊",
+    "url": "http://www.androidblog.cn/"
+  },
+  {
+    "name": "importNew",
+    "url": "http://www.importnew.com/"
+  },
+  {
+    "name": "当然我在扯淡",
+    "url": "http://www.yinwang.org/"
+  },
+  {
+    "name": "IBM Java",
+    "url": "https://www.ibm.com/developerworks/cn/views/java/libraryview.jsp"
+  },
+  {
+    "name": "计算机图书",
+    "url": "https://bookset.me/"
   }
 ]
 
