@@ -32,8 +32,8 @@ onload = function init() {
     for (var i in urls_m) {
       var a = document.createElement("a");
       var li = document.createElement("li");
-      li.style.background = "url(https://www.google.com/s2/favicons?domain=" + urls[i].url + ") no-repeat center center";
-      
+      //li.style.background = "url(https://www.google.com/s2/favicons?domain=" + urls[i].url + ") no-repeat center center";
+      li.style.background = "url(" + urls_m[i].src + ") no-repeat center center";
       li.style["background-size"] = "100% 100%";
       a.href = urls_m[i].url;
       a.appendChild(li);
