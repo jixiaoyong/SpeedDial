@@ -13,7 +13,7 @@ var urls = [
   },
   {
     "name": "Github",
-    "url": "https://github.com/jixiaoyong"
+    "url": "https://github.com/"
   },
   {
     "name": "StackOverflow",
@@ -42,6 +42,18 @@ var urls = [
   {
     "name": "计算机图书",
     "url": "https://bookset.me/"
+  },
+  {
+    "name": "计算机书籍控",
+    "url": "http://bestcbooks.com/"
+  },
+  {
+    "name": "酷壳",
+    "url": "https://coolshell.cn/"
+  },
+  {
+    "name": "技术男的后花园",
+    "url": "http://baronzhang.com/"
   }
 ]
 
