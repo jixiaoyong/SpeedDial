@@ -44,7 +44,8 @@ onload = function init() {
 }
 
 var IsPC = function () {
-  var ua = navigator.userAgent;
+  return true;
+/*  var ua = navigator.userAgent;
   var isWindowsPhone = /(?:Windows Phone)/.test(ua);
   var isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone;
   var isAndroid = /(?:Android)/.test(ua);
@@ -53,7 +54,7 @@ var IsPC = function () {
   var isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua));
   var isPhone = /(?:iPhone)/.test(ua) && !isTablet;
   var isPc = !isPhone && !isAndroid && !isSymbian;
-  return isPc;
+  return isPc;*/
 }
 function run() {
   var text = document.getElementById("text").value;
