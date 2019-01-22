@@ -1,3 +1,4 @@
+//pc urls
 var urls = [
   {
     "name": "V2EX",
@@ -61,6 +62,7 @@ var urls = [
   }
 ]
 
+//mobile urls
 var urls_m = [
   {
     "name": "V2EX",
