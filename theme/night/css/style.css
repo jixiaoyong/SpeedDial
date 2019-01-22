@@ -3,7 +3,7 @@
 }
 
 .icon{
-    background: url("../img/github_b.svg") no-repeat ;
+    background: url("../img/github_b.svg") no-repeat center;
     background-size: 100% 100%;
 }
 
