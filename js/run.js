@@ -22,7 +22,7 @@ onload = function init() {
       var a = document.createElement("a");
       a.innerHTML = urls[i].name;
       a.href = urls[i].url;
-      a.target = '_new';
+      a.target = '_blank';
       li.appendChild(a);
       ul.appendChild(li);
     }
