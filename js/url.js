@@ -13,6 +13,10 @@ var urls = [
     "url": "http://www.wanandroid.com/"
   },
   {
+    "name": "Medium",
+    "url": "https://medium.com/"
+  },
+  {
     "name": "Github",
     "url": "https://github.com/"
   },
@@ -29,7 +33,7 @@ var urls = [
     "url": "http://www.androidblog.cn/"
   },
   {
-    "name": "importNew",
+    "name": "ImportNew",
     "url": "http://www.importnew.com/"
   },
   {
