@@ -67,6 +67,10 @@ var urls = [
   {
     "name": "Awesome Mac",
     "url":"./awesome-mac"
+  },
+  {
+    "name": "My Blog",
+    "url": "https://jixiaoyong.github.io/blog/"
   }
 ]
 
