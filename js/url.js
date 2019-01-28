@@ -63,6 +63,10 @@ var urls = [
   {
     "name": "GitYuan",
     "url": "https://gityuan.com/"
+  },
+  {
+    "name": "Awesome Mac",
+    "url":"./awesome-mac"
   }
 ]
 
