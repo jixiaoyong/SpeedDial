@@ -71,7 +71,11 @@ var urls = [
   {
     "name": "My Blog",
     "url": "https://jixiaoyong.github.io/blog/"
-  }
+  },
+  {
+    "name": "androidXref",
+    "url": "http://androidxref.com"
+  },
 ]
 
 //mobile urls
