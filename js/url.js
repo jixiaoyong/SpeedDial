@@ -29,8 +29,8 @@ var urls = [
     "url": "http://androidxref.com/"
   },
   {
-    "name": "Android周刊",
-    "url": "http://www.androidblog.cn/"
+    "name": "Android开发技术周刊",
+    "url": "https://www.androidweekly.cn/"
   },
   {
     "name": "ImportNew",
