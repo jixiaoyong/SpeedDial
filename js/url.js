@@ -33,10 +33,6 @@ var urls = [
     "url": "https://www.androidweekly.cn/"
   },
   {
-    "name": "ImportNew",
-    "url": "http://www.importnew.com/"
-  },
-  {
     "name": "当然我在扯淡",
     "url": "http://www.yinwang.org/"
   },
@@ -69,7 +65,7 @@ var urls = [
     "url":"./awesome-mac"
   },
   {
-    "name": "My Blog",
+    "name": "Jixiaoyong Blog",
     "url": "https://jixiaoyong.github.io/blog/"
   },
 ]
