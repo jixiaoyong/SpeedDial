@@ -41,10 +41,6 @@ var urls = [
     "url": "https://www.ibm.com/developerworks/cn/views/java/libraryview.jsp"
   },
   {
-    "name": "计算机图书",
-    "url": "https://bookset.me/"
-  },
-  {
     "name": "计算机书籍控",
     "url": "http://bestcbooks.com/"
   },
