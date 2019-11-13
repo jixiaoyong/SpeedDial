@@ -68,6 +68,10 @@ var urls = [
     "name": "Jixiaoyong Blog",
     "url": "https://jixiaoyong.github.io/blog/"
   },
+  {
+    "name": "小创作",
+    "url": "https://chriszou.com/"
+  },
 ]
 
 //mobile urls
