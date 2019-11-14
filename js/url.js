@@ -72,6 +72,10 @@ var urls = [
     "name": "小创作",
     "url": "https://chriszou.com/"
   },
+  {
+    "name": "美团技术博客",
+    "url": "https://tech.meituan.com/"
+  }
 ]
 
 //mobile urls
