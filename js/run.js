@@ -1,4 +1,11 @@
 onload = function init() {
+
+  initLeancloud({
+    appId: "eiCorogUwe1OdpPG65oSWEsP-MdYXbMMI",
+    appKey: "glorq3CiX4j8RNIWf7kq5LBW",
+    serverURLs: "https://api.xiaoyong.ml"
+  })
+
   if (IsPC()) {
     if (navigator.serviceWorker != null) {
       navigator.serviceWorker.register('sw.js')
@@ -11,21 +18,39 @@ onload = function init() {
     var theme = localStorage.getItem("theme");
     if (theme == "" || theme == undefined)
       localStorage.setItem("theme", 1);
-    change_theme(false,false);
+    change_theme(false, false);
     document.getElementById("sub").onclick = run;
     document.getElementById("text").onkeypress = function (e) {
       if (e.which == 13) run();
     }
+
     var ul = document.getElementById("ul");
-    for (var i in urls) {
-      var li = document.createElement("li");
-      var a = document.createElement("a");
-      a.innerHTML = urls[i].name;
-      a.href = urls[i].url;
-      a.target = '_blank';
-      li.appendChild(a);
-      ul.appendChild(li);
-    }
+
+    var query = new AV.Query('hao123');
+    query.ascending('createdAt');
+    query.find().then((result) => {
+      console.log("load from leancloud")
+      for (var i in result) {
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.innerHTML = result[i].get('name');
+        a.href = result[i].get('url');
+        a.target = '_blank';
+        li.appendChild(a);
+        ul.appendChild(li);
+      }
+    }).catch((err) => {
+      console.log("load from github")
+      for (var i in urls) {
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.innerHTML = urls[i].name;
+        a.href = urls[i].url;
+        a.target = '_blank';
+        li.appendChild(a);
+        ul.appendChild(li);
+      }
+    });;
   } else {
     var ul = document.getElementById("ul");
     ul.innerHTML = "";
@@ -45,17 +70,18 @@ onload = function init() {
 
 var IsPC = function () {
   return true;
-/*  var ua = navigator.userAgent;
-  var isWindowsPhone = /(?:Windows Phone)/.test(ua);
-  var isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone;
-  var isAndroid = /(?:Android)/.test(ua);
-  var isFireFox = /(?:Firefox)/.test(ua);
-  var isChrome = /(?:Chrome|CriOS)/.test(ua);
-  var isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua));
-  var isPhone = /(?:iPhone)/.test(ua) && !isTablet;
-  var isPc = !isPhone && !isAndroid && !isSymbian;
-  return isPc;*/
+  /*  var ua = navigator.userAgent;
+    var isWindowsPhone = /(?:Windows Phone)/.test(ua);
+    var isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone;
+    var isAndroid = /(?:Android)/.test(ua);
+    var isFireFox = /(?:Firefox)/.test(ua);
+    var isChrome = /(?:Chrome|CriOS)/.test(ua);
+    var isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua));
+    var isPhone = /(?:iPhone)/.test(ua) && !isTablet;
+    var isPc = !isPhone && !isAndroid && !isSymbian;
+    return isPc;*/
 }
+
 function run() {
   var text = document.getElementById("text").value;
   var so = "https://www.google.com.hk/search?q=";
@@ -68,17 +94,19 @@ function run() {
   }
 }
 
-var themes = ["light", "night", "nyan","mobile"];
-var colors = ['#FFFFFF', '#000000', '#194894','#FFFFFF'];
+var themes = ["light", "night", "nyan", "mobile"];
+var colors = ['#FFFFFF', '#000000', '#194894', '#FFFFFF'];
+
 function change_theme(flag) {
-  if(IsPC()){
+  if (IsPC()) {
     var n = localStorage.getItem("theme");
     if (flag) {
-      n++; n %= themes.length-1;
+      n++;
+      n %= themes.length - 1;
       localStorage.setItem("theme", n);
     }
-  }else{
-    n=themes.length-1;
+  } else {
+    n = themes.length - 1;
   }
   var css = document.getElementById("css");
   css.href = "theme/" + themes[n] + "/css/style.css";
